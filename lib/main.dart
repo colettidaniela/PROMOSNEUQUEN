@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               MaterialButton(
                 minWidth: 450,
-                height: 60,
+                height: 55,
                 onPressed: () {},
                 shape: RoundedRectangleBorder(
                     side: BorderSide(color: Colors.deepPurpleAccent),
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
               Container(
                 child: MaterialButton(
                   minWidth: 450,
-                  height: 60,
+                  height: 55,
                   onPressed: () {},
                   color: Colors.deepPurpleAccent,
                   shape: RoundedRectangleBorder(
