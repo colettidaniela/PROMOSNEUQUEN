@@ -13,15 +13,15 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              RaisedButton(
-                color: Colors.deepPurpleAccent,
-                padding:
-                    EdgeInsets.symmetric(vertical: 20.0, horizontal: 200.0),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-                child: Text("CLIENTE"),
+              MaterialButton(
+                minWidth: double.infinity,
+                height: 60,
                 onPressed: () {},
-              ),
+                shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.deepPurpleAccent),
+                    borderRadius: BorderRadius.circular(60)),
+                child: Text("CLIENTE"),
+              )
             ],
           ),
         ),
