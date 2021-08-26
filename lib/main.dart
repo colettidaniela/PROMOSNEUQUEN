@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
                   minWidth: 450,
                   height: 60,
                   onPressed: () {},
+                  color: Colors.deepPurpleAccent,
                   shape: RoundedRectangleBorder(
                       side: BorderSide(color: Colors.deepPurpleAccent),
                       borderRadius: BorderRadius.circular(60)),
