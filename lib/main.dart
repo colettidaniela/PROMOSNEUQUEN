@@ -14,13 +14,30 @@ class MyApp extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               MaterialButton(
-                minWidth: double.infinity,
+                minWidth: 450,
                 height: 60,
                 onPressed: () {},
                 shape: RoundedRectangleBorder(
                     side: BorderSide(color: Colors.deepPurpleAccent),
                     borderRadius: BorderRadius.circular(60)),
-                child: Text("CLIENTE"),
+                child: Text(
+                  "CLIENTE",
+                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
+                ),
+              ),
+              Container(
+                child: MaterialButton(
+                  minWidth: 450,
+                  height: 60,
+                  onPressed: () {},
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.deepPurpleAccent),
+                      borderRadius: BorderRadius.circular(60)),
+                  child: Text(
+                    "DUEÑO DE LOCAL",
+                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
+                  ),
+                ),
               )
             ],
           ),
