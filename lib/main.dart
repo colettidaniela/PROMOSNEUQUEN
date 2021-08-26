@@ -25,6 +25,9 @@ class MyApp extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 child: MaterialButton(
                   minWidth: 450,
