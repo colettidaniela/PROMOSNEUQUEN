@@ -1,47 +1,30 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
+    return Scaffold(
+      body: SafeArea(
+        child: Container(
+          width: double.infinity,
+          height: MediaQuery.of(context).size.height,
           child: Column(
-            mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              MaterialButton(
-                minWidth: 450,
-                height: 55,
-                onPressed: () {},
-                shape: RoundedRectangleBorder(
-                    side: BorderSide(color: Colors.deepPurpleAccent),
-                    borderRadius: BorderRadius.circular(60)),
-                child: Text(
-                  "CLIENTE",
-                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Container(
-                child: MaterialButton(
-                  minWidth: 450,
-                  height: 55,
-                  onPressed: () {},
-                  color: Colors.deepPurpleAccent,
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.deepPurpleAccent),
-                      borderRadius: BorderRadius.circular(60)),
-                  child: Text(
-                    "DUEÑO DE LOCAL",
-                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  SizedBox(
+                    height: 30,
                   ),
-                ),
+                  Text(
+                    "BIENVENIDO",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                  ),
+                ],
               )
             ],
           ),
