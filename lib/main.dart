@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,18 +16,19 @@ class MyApp extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           child: Column(
             children: <Widget>[
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Text(
-                    "BIENVENIDO",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-                  ),
-                ],
-              )
+              MaterialButton(
+                minWidth: 450,
+                height: 55,
+                shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.deepPurpleAccent),
+                    borderRadius: BorderRadius.circular(40)),
+                child: Text("CLIENTE",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 20,
+                    )),
+                onPressed: () {},
+              ),
             ],
           ),
         ),
