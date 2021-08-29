@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
           width: double.infinity,
           height: MediaQuery.of(context).size.height,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               MaterialButton(
                 minWidth: 450,
@@ -27,9 +28,21 @@ class MyApp extends StatelessWidget {
                     )),
                 onPressed: () {},
               ),
+              SizedBox(
+                height: 10,
+              ),
               Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(40),
+                    border: Border(
+                      bottom: BorderSide(color: Colors.black),
+                      top: BorderSide(color: Colors.black),
+                      left: BorderSide(color: Colors.black),
+                      right: BorderSide(color: Colors.black),
+                    )),
                 child: MaterialButton(
                   color: Colors.deepPurpleAccent,
+                  elevation: 0,
                   minWidth: 450,
                   height: 55,
                   shape: RoundedRectangleBorder(
