@@ -22,13 +22,14 @@ class MyApp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(40)),
                 child: Text("CLIENTE",
                     style: TextStyle(
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.w900,
                       fontSize: 20,
                     )),
                 onPressed: () {},
               ),
               Container(
                 child: MaterialButton(
+                  color: Colors.deepPurpleAccent,
                   minWidth: 450,
                   height: 55,
                   shape: RoundedRectangleBorder(
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
                       borderRadius: BorderRadius.circular(40)),
                   child: Text("DUEÑO DE LOCAL",
                       style: TextStyle(
-                        fontWeight: FontWeight.w800,
+                        fontWeight: FontWeight.w900,
                         fontSize: 20,
                       )),
                   onPressed: () {},
