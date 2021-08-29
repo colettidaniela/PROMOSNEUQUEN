@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,6 +26,21 @@ class MyApp extends StatelessWidget {
                       fontSize: 20,
                     )),
                 onPressed: () {},
+              ),
+              Container(
+                child: MaterialButton(
+                  minWidth: 450,
+                  height: 55,
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.deepPurpleAccent),
+                      borderRadius: BorderRadius.circular(40)),
+                  child: Text("DUEÑO DE LOCAL",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 20,
+                      )),
+                  onPressed: () {},
+                ),
               ),
             ],
           ),
