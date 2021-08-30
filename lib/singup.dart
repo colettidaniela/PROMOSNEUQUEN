@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:promos_neuquen/resgistrar.dart';
 
 class singup extends StatelessWidget {
   @override
@@ -89,11 +90,17 @@ class singup extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text("Todavia no tenes una cuenta?"),
-                Text(
-                  "Registrate",
-                  style: TextStyle(
-                    color: Colors.blue[400],
-                    fontWeight: FontWeight.w800,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Registrar()));
+                  },
+                  child: Text(
+                    "Registrate",
+                    style: TextStyle(
+                      color: Colors.blue[400],
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                 ),
               ],
