@@ -15,6 +15,21 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Text(
+                    "BIENVENIDO",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                    ),
+                  ),
+                ],
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 6,
+                decoration: BoxDecoration(),
+              ),
               Container(
                 child: Column(
                   children: [
