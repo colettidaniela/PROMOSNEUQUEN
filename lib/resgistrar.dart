@@ -27,7 +27,7 @@ class Registrar extends StatelessWidget {
             Column(
               children: [
                 SizedBox(
-                  height: 25,
+                  height: 30,
                 ),
                 Text(
                   "REGISTRA TU LOCAL",
@@ -39,7 +39,7 @@ class Registrar extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 50,
+              height: 5,
             ),
             Container(
               padding: EdgeInsets.all(50),
@@ -74,6 +74,31 @@ class Registrar extends StatelessWidget {
                         InputDecoration(labelText: "Ubicacion del local"),
                   ),
                 ],
+              ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border(
+                    bottom: BorderSide(color: Colors.black),
+                    top: BorderSide(color: Colors.black),
+                    left: BorderSide(color: Colors.black),
+                    right: BorderSide(color: Colors.black),
+                  )),
+              child: MaterialButton(
+                color: Colors.deepPurpleAccent,
+                elevation: 0,
+                minWidth: 450,
+                height: 55,
+                shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.deepPurpleAccent),
+                    borderRadius: BorderRadius.circular(40)),
+                child: Text("REGISTRAR",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      fontSize: 20,
+                    )),
+                onPressed: () {},
               ),
             ),
           ],
