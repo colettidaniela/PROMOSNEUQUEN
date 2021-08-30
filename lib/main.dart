@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:promos_neuquen/resgistrar.dart';
+import 'package:promos_neuquen/singup.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: MyApp()));
