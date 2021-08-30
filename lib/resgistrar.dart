@@ -14,7 +14,7 @@ class Registrar extends StatelessWidget {
           },
           icon: Icon(
             Icons.arrow_back,
-            size: 20,
+            size: 25,
             color: Colors.black,
           ),
         ),
@@ -26,12 +26,49 @@ class Registrar extends StatelessWidget {
           children: <Widget>[
             Column(
               children: [
+                SizedBox(
+                  height: 25,
+                ),
                 Text(
                   "REGISTRA TU LOCAL",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
                   ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Column(
+              children: <Widget>[
+                TextFormField(
+                  decoration: InputDecoration(labelText: "Dueño del local"),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                TextFormField(
+                  decoration: InputDecoration(labelText: "DNI"),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                TextFormField(
+                  decoration: InputDecoration(labelText: "Patente del local"),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                TextFormField(
+                  decoration: InputDecoration(labelText: "Tipo de local"),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                TextFormField(
+                  decoration: InputDecoration(labelText: "Ubicacion del local"),
                 ),
               ],
             ),
