@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:promos_neuquen/Inicio_Cliente.dart';
 import 'package:promos_neuquen/resgistrar.dart';
 import 'package:promos_neuquen/singup.dart';
 
@@ -59,7 +60,12 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.w900,
                         fontSize: 20,
                       )),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => InicioCliente()));
+                  }),
               SizedBox(
                 height: 10,
               ),
