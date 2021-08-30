@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:promos_neuquen/Incio_Due%C3%B1o.dart';
 import 'package:promos_neuquen/singup.dart';
 
 class Registrar extends StatelessWidget {
@@ -99,7 +100,10 @@ class Registrar extends StatelessWidget {
                       fontWeight: FontWeight.w900,
                       fontSize: 20,
                     )),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => InicioDueno()));
+                },
               ),
             ),
             SizedBox(
