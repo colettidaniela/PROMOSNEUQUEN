@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:promos_neuquen/resgistrar.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: MyApp()));
@@ -47,18 +48,17 @@ class MyApp extends StatelessWidget {
                 height: 5,
               ),
               MaterialButton(
-                minWidth: 450,
-                height: 55,
-                shape: RoundedRectangleBorder(
-                    side: BorderSide(color: Colors.deepPurpleAccent),
-                    borderRadius: BorderRadius.circular(40)),
-                child: Text("CLIENTE",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w900,
-                      fontSize: 20,
-                    )),
-                onPressed: () {},
-              ),
+                  minWidth: 450,
+                  height: 55,
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.deepPurpleAccent),
+                      borderRadius: BorderRadius.circular(40)),
+                  child: Text("CLIENTE",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 20,
+                      )),
+                  onPressed: () {}),
               SizedBox(
                 height: 10,
               ),
@@ -84,7 +84,10 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.w900,
                         fontSize: 20,
                       )),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Registrar()));
+                  },
                 ),
               ),
             ],
