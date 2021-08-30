@@ -41,36 +41,40 @@ class Registrar extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            Column(
-              children: <Widget>[
-                TextFormField(
-                  decoration: InputDecoration(labelText: "Dueño del local"),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                TextFormField(
-                  decoration: InputDecoration(labelText: "DNI"),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                TextFormField(
-                  decoration: InputDecoration(labelText: "Patente del local"),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                TextFormField(
-                  decoration: InputDecoration(labelText: "Tipo de local"),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                TextFormField(
-                  decoration: InputDecoration(labelText: "Ubicacion del local"),
-                ),
-              ],
+            Container(
+              padding: EdgeInsets.all(50),
+              child: Column(
+                children: <Widget>[
+                  TextFormField(
+                    decoration: InputDecoration(labelText: "Dueño del local"),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextFormField(
+                    decoration: InputDecoration(labelText: "DNI"),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextFormField(
+                    decoration: InputDecoration(labelText: "Patente del local"),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextFormField(
+                    decoration: InputDecoration(labelText: "Tipo de local"),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextFormField(
+                    decoration:
+                        InputDecoration(labelText: "Ubicacion del local"),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
