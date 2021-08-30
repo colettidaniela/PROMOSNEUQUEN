@@ -101,6 +101,22 @@ class Registrar extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
+            SizedBox(
+              height: 6,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text("Ya tenes una cuenta?"),
+                Text(
+                  "Inicia Sesion",
+                  style: TextStyle(
+                    color: Colors.blue[400],
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
