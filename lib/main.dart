@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Text(
-                    "BIENVENI",
+                    "BIENVENIDOS",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
