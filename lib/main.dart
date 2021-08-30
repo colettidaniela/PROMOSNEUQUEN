@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:promos_neuquen/Incio_Due%C3%B1o.dart';
 import 'package:promos_neuquen/Inicio_Cliente.dart';
 import 'package:promos_neuquen/resgistrar.dart';
 import 'package:promos_neuquen/singup.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: MyApp()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: InicioDueno()));
 }
 
 class MyApp extends StatelessWidget {
