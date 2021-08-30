@@ -47,25 +47,25 @@ class Registrar extends StatelessWidget {
                   decoration: InputDecoration(labelText: "Dueño del local"),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 TextFormField(
                   decoration: InputDecoration(labelText: "DNI"),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 TextFormField(
                   decoration: InputDecoration(labelText: "Patente del local"),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 TextFormField(
                   decoration: InputDecoration(labelText: "Tipo de local"),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 TextFormField(
                   decoration: InputDecoration(labelText: "Ubicacion del local"),
