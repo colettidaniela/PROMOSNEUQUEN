@@ -19,7 +19,25 @@ class Registrar extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: double.infinity,
+        child: Column(
+          children: <Widget>[
+            Column(
+              children: [
+                Text(
+                  "REGISTRA TU LOCAL",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
