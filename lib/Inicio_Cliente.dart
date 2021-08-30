@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:promos_neuquen/resgistrar.dart';
 
 class InicioCliente extends StatelessWidget {
   @override
@@ -28,7 +29,10 @@ class InicioCliente extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Registrar()));
+              },
             ),
           ],
         ),
